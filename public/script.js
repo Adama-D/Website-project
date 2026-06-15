@@ -200,8 +200,8 @@ function renderCard() {
     grid.appendChild(btn);
   });
 
-  // Prononciation automatique après un court délai
-  setTimeout(() => speak(card.ar), 400);
+  // Prononciation automatique : français puis arabe
+  setTimeout(() => speakCard(card), 400);
 }
 
 // Messages de félicitation arabes (tirés aléatoirement)
@@ -324,28 +324,30 @@ async function endGame() {
   showView('result');
 }
 
-// ===== PRONONCIATION ARABE (via proxy Google TTS) =====
+// ===== PRONONCIATION (via proxy Google TTS) =====
 
 // Un seul élément audio réutilisé pour éviter les chevauchements
 const audioPlayer = new Audio();
 
-function speak(text) {
-  // Arrête la lecture en cours
+function speak(text, lang = 'ar') {
   audioPlayer.pause();
   audioPlayer.currentTime = 0;
-
-  // Appelle le proxy sur notre serveur Express
-  audioPlayer.src = `/api/tts?text=${encodeURIComponent(text)}`;
+  audioPlayer.src = `/api/tts?text=${encodeURIComponent(text)}&lang=${lang}`;
   audioPlayer.play().catch(() => {
-    // Le navigateur bloque parfois l'autoplay — le bouton "Écouter" reste disponible
     console.info('Autoplay bloqué, utilise le bouton 🔊');
   });
+}
+
+// Prononce le mot français puis l'arabe avec un enchaînement
+function speakCard(card) {
+  speak(card.fr, 'fr');
+  setTimeout(() => speak(card.ar, 'ar'), 1400);
 }
 
 // Bouton écouter manuel
 $('btn-listen').addEventListener('click', () => {
   const card = state.queue[state.current];
-  if (card) speak(card.ar);
+  if (card) speakCard(card);
 });
 
 // ===== QUITTER LE JEU =====

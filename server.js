@@ -21,9 +21,10 @@ app.get('/api/flashcards', (req, res) => {
 // Proxy Google Translate TTS — évite les problèmes CORS et l'installation de voix Windows
 app.get('/api/tts', async (req, res) => {
   const text = req.query.text;
+  const lang = ['ar', 'fr'].includes(req.query.lang) ? req.query.lang : 'ar';
   if (!text) return res.status(400).send('Paramètre text manquant');
 
-  const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&ttsspeed=0.8&q=${encodeURIComponent(text)}`;
+  const url = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=${lang}&ttsspeed=0.8&q=${encodeURIComponent(text)}`;
 
   try {
     const response = await fetch(url, {
