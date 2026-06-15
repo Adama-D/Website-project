@@ -454,8 +454,116 @@ body {
 .hidden { display: none !important; }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 400px) {
-  .card-emoji { font-size: 90px; }
+
+/* --- Tablette (≤ 768px) --- */
+@media (max-width: 768px) {
+  .home-container,
+  .result-container {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  .categories-container {
+    max-width: 100%;
+    padding: 16px 8px 24px;
+  }
+
+  .game-body {
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 72px;
+  }
+
+  .categories-title { font-size: 1.6rem; }
+
+  /* Grille catégories : 2 colonnes sur tablette portrait */
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .cat-btn { padding: 18px 8px 14px; }
+  .cat-emoji { font-size: 2.2rem; }
+  .cat-name  { font-size: 0.85rem; }
+
+  .card-emoji { font-size: 100px; }
+
+  .result-title { font-size: 2rem; }
+  .result-score { font-size: 1.2rem; }
+}
+
+/* --- Tablette paysage / petite tablette (≥ 600px et ≤ 768px) --- */
+@media (min-width: 600px) and (max-width: 768px) {
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .game-body { max-width: 520px; margin: 0 auto; }
+}
+
+/* --- Mobile (≤ 480px) --- */
+@media (max-width: 480px) {
+  .view { padding: 16px 12px; }
+
+  .logo       { font-size: 60px; margin-bottom: 8px; }
   .app-title  { font-size: 2.2rem; }
-  .choice-btn { font-size: 1.2rem; padding: 12px 8px; }
+  .app-subtitle { font-size: 1rem; margin-bottom: 24px; }
+
+  .card { padding: 20px 16px; }
+  .form-card input { padding: 12px 14px; font-size: 1rem; }
+
+  .btn        { padding: 13px; font-size: 1rem; }
+  .btn-random { font-size: 1rem; padding: 14px; }
+
+  /* Catégories : 2 colonnes sur mobile */
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .cat-btn   { padding: 14px 6px 10px; }
+  .cat-emoji { font-size: 1.8rem; }
+  .cat-name  { font-size: 0.75rem; }
+  .cat-count { font-size: 0.68rem; }
+
+  .categories-title    { font-size: 1.4rem; }
+  .categories-subtitle { font-size: 0.95rem; }
+
+  /* Jeu */
+  .game-header { padding: 10px 12px; gap: 8px; }
+  .progress-bar-wrap { height: 13px; }
+  .score-badge { font-size: 0.9rem; }
+
+  .game-body   { padding-top: 68px; padding-left: 10px; padding-right: 10px; }
+  .card-emoji  { font-size: 80px; }
+  .card-fr     { font-size: 1.2rem; }
+  .card-counter { font-size: 0.82rem; }
+
+  .btn-listen { font-size: 0.88rem; padding: 8px 16px; margin-bottom: 20px; }
+
+  .choices-grid { gap: 8px; margin-bottom: 14px; }
+  .choice-btn   { font-size: 1.3rem; padding: 14px 8px; }
+
+  .feedback { font-size: 1rem; padding: 12px 14px; }
+
+  /* Résultats */
+  .result-emoji  { font-size: 80px; }
+  .result-title  { font-size: 1.8rem; }
+  .result-score  { font-size: 1.1rem; }
+  .result-best   { font-size: 0.9rem; margin-bottom: 24px; }
+}
+
+/* --- Très petit mobile (≤ 360px) --- */
+@media (max-width: 360px) {
+  .app-title   { font-size: 1.9rem; }
+  .logo        { font-size: 50px; }
+  .card-emoji  { font-size: 64px; }
+  .choice-btn  { font-size: 1.1rem; padding: 12px 6px; }
+  .result-emoji { font-size: 64px; }
+  .result-title { font-size: 1.5rem; }
+
+  .categories-grid { gap: 6px; }
+  .cat-btn     { padding: 12px 4px 8px; }
+  .cat-emoji   { font-size: 1.5rem; }
 }
