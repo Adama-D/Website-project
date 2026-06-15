@@ -49,17 +49,21 @@ function getOrCreateUser(name) {
   const key = `arabikids_${name.toLowerCase()}`;
   let user = JSON.parse(localStorage.getItem(key) || 'null');
   if (!user) {
-    user = { name, best_score: 0 };
+    user = { name, best_scores: {} };
     localStorage.setItem(key, JSON.stringify(user));
   }
+  // Migration ancienne structure (best_score global → best_scores par catégorie)
+  if (!user.best_scores) user.best_scores = {};
   return user;
 }
 
-function saveUserScore(name, score) {
+function saveUserScore(name, score, category) {
   const key = `arabikids_${name.toLowerCase()}`;
-  let user = JSON.parse(localStorage.getItem(key) || 'null') || { name, best_score: 0 };
-  if (score > user.best_score) {
-    user.best_score = score;
+  let user = JSON.parse(localStorage.getItem(key) || 'null') || { name, best_scores: {} };
+  if (!user.best_scores) user.best_scores = {};
+  const prev = user.best_scores[category] || 0;
+  if (score > prev) {
+    user.best_scores[category] = score;
     localStorage.setItem(key, JSON.stringify(user));
   }
   return user;
@@ -274,8 +278,8 @@ async function endGame() {
   // Mettre à jour la barre à 100%
   $('progress-bar').style.width = '100%';
 
-  // Sauvegarder le score localement
-  const updatedUser = saveUserScore(state.user.name, state.score);
+  // Sauvegarder le score par catégorie
+  const updatedUser = saveUserScore(state.user.name, state.score, state.category);
   state.user = updatedUser;
 
   // Afficher les résultats
@@ -318,8 +322,9 @@ async function endGame() {
 
   // Message vocal de fin après un court délai
   setTimeout(() => speak(voiceMsg), 600);
+  const bestForCategory = updatedUser.best_scores?.[state.category] || state.score;
   $('result-score').textContent = `${state.score} / ${total} bonnes réponses (${pct}%)`;
-  $('result-best').textContent = `🏆 Meilleur score : ${updatedUser.best_score} / ${total}`;
+  $('result-best').textContent = `🏆 Meilleur score : ${bestForCategory} / ${total}`;
 
   showView('result');
 }
