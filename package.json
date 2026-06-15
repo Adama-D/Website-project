@@ -1,0 +1,12 @@
+{
+  "name": "arabikids",
+  "version": "1.0.0",
+  "description": "Application de flashcards arabes pour enfants",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

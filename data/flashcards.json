@@ -1,0 +1,673 @@
+[
+  {
+    "fr": "chat",
+    "ar": "قطة",
+    "emoji": "🐈",
+    "category": "animaux"
+  },
+  {
+    "fr": "chien",
+    "ar": "كلب",
+    "emoji": "🐕",
+    "category": "animaux"
+  },
+  {
+    "fr": "poisson",
+    "ar": "سمكة",
+    "emoji": "🐟",
+    "category": "animaux"
+  },
+  {
+    "fr": "oiseau",
+    "ar": "طائر",
+    "emoji": "🐦",
+    "category": "animaux"
+  },
+  {
+    "fr": "lapin",
+    "ar": "أرنب",
+    "emoji": "🐇",
+    "category": "animaux"
+  },
+  {
+    "fr": "éléphant",
+    "ar": "فيل",
+    "emoji": "🐘",
+    "category": "animaux"
+  },
+  {
+    "fr": "cheval",
+    "ar": "حصان",
+    "emoji": "🐎",
+    "category": "animaux"
+  },
+  {
+    "fr": "tortue",
+    "ar": "سلحفاة",
+    "emoji": "🐢",
+    "category": "animaux"
+  },
+  {
+    "fr": "lion",
+    "ar": "أسد",
+    "emoji": "🦁",
+    "category": "animaux",
+    "masked": true
+  },
+  {
+    "fr": "vache",
+    "ar": "بقرة",
+    "emoji": "🐄",
+    "category": "animaux",
+    "masked": true
+  },
+  {
+    "fr": "mouton",
+    "ar": "خروف",
+    "emoji": "🐑",
+    "category": "animaux",
+    "masked": true
+  },
+  {
+    "fr": "singe",
+    "ar": "قرد",
+    "emoji": "🦧",
+    "category": "animaux",
+    "masked": true
+  },
+  {
+    "fr": "pomme",
+    "ar": "تفاحة",
+    "emoji": "🍎",
+    "category": "fruits"
+  },
+  {
+    "fr": "banane",
+    "ar": "موزة",
+    "emoji": "🍌",
+    "category": "fruits"
+  },
+  {
+    "fr": "orange",
+    "ar": "برتقالة",
+    "emoji": "🍊",
+    "category": "fruits"
+  },
+  {
+    "fr": "fraise",
+    "ar": "فراولة",
+    "emoji": "🍓",
+    "category": "fruits"
+  },
+  {
+    "fr": "raisin",
+    "ar": "عنب",
+    "emoji": "🍇",
+    "category": "fruits"
+  },
+  {
+    "fr": "pastèque",
+    "ar": "بطيخة",
+    "emoji": "🍉",
+    "category": "fruits"
+  },
+  {
+    "fr": "ananas",
+    "ar": "أناناس",
+    "emoji": "🍍",
+    "category": "fruits"
+  },
+  {
+    "fr": "cerise",
+    "ar": "كرز",
+    "emoji": "🍒",
+    "category": "fruits"
+  },
+  {
+    "fr": "mangue",
+    "ar": "مانجو",
+    "emoji": "🥭",
+    "category": "fruits"
+  },
+  {
+    "fr": "tomate",
+    "ar": "طماطم",
+    "emoji": "🍅",
+    "category": "fruits"
+  },
+  {
+    "fr": "carotte",
+    "ar": "جزرة",
+    "emoji": "🥕",
+    "category": "fruits"
+  },
+  {
+    "fr": "rouge",
+    "ar": "أحمر",
+    "emoji": "🔴",
+    "category": "couleurs"
+  },
+  {
+    "fr": "bleu",
+    "ar": "أزرق",
+    "emoji": "🔵",
+    "category": "couleurs"
+  },
+  {
+    "fr": "vert",
+    "ar": "أخضر",
+    "emoji": "🟢",
+    "category": "couleurs"
+  },
+  {
+    "fr": "jaune",
+    "ar": "أصفر",
+    "emoji": "🟡",
+    "category": "couleurs"
+  },
+  {
+    "fr": "rose",
+    "ar": "وردي",
+    "emoji": "🌷",
+    "category": "couleurs"
+  },
+  {
+    "fr": "noir",
+    "ar": "أسود",
+    "emoji": "⚫",
+    "category": "couleurs"
+  },
+  {
+    "fr": "blanc",
+    "ar": "أبيض",
+    "emoji": "⚪",
+    "category": "couleurs"
+  },
+  {
+    "fr": "orange",
+    "ar": "برتقالي",
+    "emoji": "🟠",
+    "category": "couleurs"
+  },
+  {
+    "fr": "un",
+    "ar": "واحد",
+    "emoji": "1️⃣",
+    "category": "chiffres"
+  },
+  {
+    "fr": "deux",
+    "ar": "اثنان",
+    "emoji": "2️⃣",
+    "category": "chiffres"
+  },
+  {
+    "fr": "trois",
+    "ar": "ثلاثة",
+    "emoji": "3️⃣",
+    "category": "chiffres"
+  },
+  {
+    "fr": "quatre",
+    "ar": "أربعة",
+    "emoji": "4️⃣",
+    "category": "chiffres"
+  },
+  {
+    "fr": "cinq",
+    "ar": "خمسة",
+    "emoji": "5️⃣",
+    "category": "chiffres"
+  },
+  {
+    "fr": "six",
+    "ar": "ستة",
+    "emoji": "6️⃣",
+    "category": "chiffres"
+  },
+  {
+    "fr": "sept",
+    "ar": "سبعة",
+    "emoji": "7️⃣",
+    "category": "chiffres"
+  },
+  {
+    "fr": "huit",
+    "ar": "ثمانية",
+    "emoji": "8️⃣",
+    "category": "chiffres"
+  },
+  {
+    "fr": "neuf",
+    "ar": "تسعة",
+    "emoji": "9️⃣",
+    "category": "chiffres"
+  },
+  {
+    "fr": "dix",
+    "ar": "عشرة",
+    "emoji": "🔟",
+    "category": "chiffres"
+  },
+  {
+    "fr": "fourchette",
+    "ar": "شوكة",
+    "emoji": "🍴",
+    "category": "ustensiles"
+  },
+  {
+    "fr": "cuillère",
+    "ar": "ملعقة",
+    "emoji": "🥄",
+    "category": "ustensiles"
+  },
+  {
+    "fr": "couteau",
+    "ar": "سكين",
+    "emoji": "🔪",
+    "category": "ustensiles"
+  },
+  {
+    "fr": "assiette",
+    "ar": "طبق",
+    "emoji": "🫙",
+    "category": "ustensiles"
+  },
+  {
+    "fr": "verre",
+    "ar": "كوب",
+    "emoji": "🥤",
+    "category": "ustensiles"
+  },
+  {
+    "fr": "tasse",
+    "ar": "فنجان",
+    "emoji": "☕",
+    "category": "ustensiles"
+  },
+  {
+    "fr": "casserole",
+    "ar": "قدر",
+    "emoji": "🍲",
+    "category": "ustensiles"
+  },
+  {
+    "fr": "bouteille",
+    "ar": "زجاجة",
+    "emoji": "🍶",
+    "category": "ustensiles"
+  },
+  {
+    "fr": "pain",
+    "ar": "خبز",
+    "emoji": "🍞",
+    "category": "nourriture"
+  },
+  {
+    "fr": "lait",
+    "ar": "حليب",
+    "emoji": "🥛",
+    "category": "nourriture"
+  },
+  {
+    "fr": "eau",
+    "ar": "ماء",
+    "emoji": "💧",
+    "category": "nourriture"
+  },
+  {
+    "fr": "riz",
+    "ar": "أرز",
+    "emoji": "🍚",
+    "category": "nourriture"
+  },
+  {
+    "fr": "viande",
+    "ar": "لحم",
+    "emoji": "🥩",
+    "category": "nourriture"
+  },
+  {
+    "fr": "oeuf",
+    "ar": "بيضة",
+    "emoji": "🥚",
+    "category": "nourriture"
+  },
+  {
+    "fr": "fromage",
+    "ar": "جبنة",
+    "emoji": "🧀",
+    "category": "nourriture"
+  },
+  {
+    "fr": "soupe",
+    "ar": "شوربة",
+    "emoji": "🥣",
+    "category": "nourriture"
+  },
+  {
+    "fr": "sucre",
+    "ar": "سكر",
+    "emoji": "🍬",
+    "category": "nourriture"
+  },
+  {
+    "fr": "maison",
+    "ar": "بيت",
+    "emoji": "🏠",
+    "category": "maison"
+  },
+  {
+    "fr": "porte",
+    "ar": "باب",
+    "emoji": "🚪",
+    "category": "maison"
+  },
+  {
+    "fr": "fenêtre",
+    "ar": "نافذة",
+    "emoji": "🪟",
+    "category": "maison"
+  },
+  {
+    "fr": "lit",
+    "ar": "سرير",
+    "emoji": "🛌",
+    "category": "maison"
+  },
+  {
+    "fr": "chaise",
+    "ar": "كرسي",
+    "emoji": "🪑",
+    "category": "maison"
+  },
+  {
+    "fr": "télévision",
+    "ar": "تلفاز",
+    "emoji": "📺",
+    "category": "maison"
+  },
+  {
+    "fr": "téléphone",
+    "ar": "هاتف",
+    "emoji": "📱",
+    "category": "maison"
+  },
+  {
+    "fr": "lampe",
+    "ar": "مصباح",
+    "emoji": "💡",
+    "category": "maison"
+  },
+  {
+    "fr": "clé",
+    "ar": "مفتاح",
+    "emoji": "🔑",
+    "category": "maison"
+  },
+  {
+    "fr": "main",
+    "ar": "يد",
+    "emoji": "✋",
+    "category": "corps"
+  },
+  {
+    "fr": "pied",
+    "ar": "قدم",
+    "emoji": "🦶",
+    "category": "corps"
+  },
+  {
+    "fr": "oreille",
+    "ar": "أذن",
+    "emoji": "👂",
+    "category": "corps"
+  },
+  {
+    "fr": "dent",
+    "ar": "سن",
+    "emoji": "🦷",
+    "category": "corps"
+  },
+  {
+    "fr": "cheveux",
+    "ar": "شعر",
+    "emoji": "✂️",
+    "category": "corps"
+  },
+  {
+    "fr": "chapeau",
+    "ar": "قبعة",
+    "emoji": "🎩",
+    "category": "vêtements"
+  },
+  {
+    "fr": "chaussure",
+    "ar": "حذاء",
+    "emoji": "👟",
+    "category": "vêtements"
+  },
+  {
+    "fr": "robe",
+    "ar": "فستان",
+    "emoji": "👗",
+    "category": "vêtements"
+  },
+  {
+    "fr": "pantalon",
+    "ar": "بنطال",
+    "emoji": "👖",
+    "category": "vêtements"
+  },
+  {
+    "fr": "chemise",
+    "ar": "قميص",
+    "emoji": "👕",
+    "category": "vêtements"
+  },
+  {
+    "fr": "lunettes",
+    "ar": "نظارة",
+    "emoji": "👓",
+    "category": "vêtements"
+  },
+  {
+    "fr": "sac",
+    "ar": "حقيبة",
+    "emoji": "👜",
+    "category": "vêtements"
+  },
+  {
+    "fr": "voiture",
+    "ar": "سيارة",
+    "emoji": "🚗",
+    "category": "transport"
+  },
+  {
+    "fr": "avion",
+    "ar": "طائرة",
+    "emoji": "✈️",
+    "category": "transport"
+  },
+  {
+    "fr": "vélo",
+    "ar": "دراجة",
+    "emoji": "🚲",
+    "category": "transport"
+  },
+  {
+    "fr": "bus",
+    "ar": "حافلة",
+    "emoji": "🚌",
+    "category": "transport"
+  },
+  {
+    "fr": "bateau",
+    "ar": "قارب",
+    "emoji": "⛵",
+    "category": "transport"
+  },
+  {
+    "fr": "train",
+    "ar": "قطار",
+    "emoji": "🚂",
+    "category": "transport"
+  },
+  {
+    "fr": "moto",
+    "ar": "دراجة نارية",
+    "emoji": "🏍",
+    "category": "transport"
+  },
+  {
+    "fr": "livre",
+    "ar": "كتاب",
+    "emoji": "📚",
+    "category": "école"
+  },
+  {
+    "fr": "crayon",
+    "ar": "قلم رصاص",
+    "emoji": "✏️",
+    "category": "école"
+  },
+  {
+    "fr": "stylo",
+    "ar": "قلم",
+    "emoji": "🖊",
+    "category": "école"
+  },
+  {
+    "fr": "cahier",
+    "ar": "كراسة",
+    "emoji": "📓",
+    "category": "école"
+  },
+  {
+    "fr": "sac à dos",
+    "ar": "حقيبة مدرسية",
+    "emoji": "🎒",
+    "category": "école"
+  },
+  {
+    "fr": "règle",
+    "ar": "مسطرة",
+    "emoji": "📏",
+    "category": "école"
+  },
+  {
+    "fr": "gomme",
+    "ar": "ممحاة",
+    "emoji": "📌",
+    "category": "école"
+  },
+  {
+    "fr": "soleil",
+    "ar": "شمس",
+    "emoji": "☀️",
+    "category": "nature"
+  },
+  {
+    "fr": "lune",
+    "ar": "قمر",
+    "emoji": "🌙",
+    "category": "nature"
+  },
+  {
+    "fr": "étoile",
+    "ar": "نجمة",
+    "emoji": "⭐",
+    "category": "nature"
+  },
+  {
+    "fr": "nuage",
+    "ar": "سحابة",
+    "emoji": "☁️",
+    "category": "nature"
+  },
+  {
+    "fr": "pluie",
+    "ar": "مطر",
+    "emoji": "🌧",
+    "category": "nature"
+  },
+  {
+    "fr": "arbre",
+    "ar": "شجرة",
+    "emoji": "🌳",
+    "category": "nature"
+  },
+  {
+    "fr": "fleur",
+    "ar": "زهرة",
+    "emoji": "🌸",
+    "category": "nature"
+  },
+  {
+    "fr": "montagne",
+    "ar": "جبل",
+    "emoji": "⛰",
+    "category": "nature"
+  },
+  {
+    "fr": "mer",
+    "ar": "بحر",
+    "emoji": "🌊",
+    "category": "nature"
+  },
+  {
+    "fr": "feu",
+    "ar": "نار",
+    "emoji": "🔥",
+    "category": "nature"
+  },
+  {
+    "fr": "maman",
+    "ar": "أمّ",
+    "emoji": "👩",
+    "category": "famille",
+    "masked": true
+  },
+  {
+    "fr": "papa",
+    "ar": "أب",
+    "emoji": "👨",
+    "category": "famille",
+    "masked": true
+  },
+  {
+    "fr": "bébé",
+    "ar": "رضيع",
+    "emoji": "👶",
+    "category": "famille",
+    "masked": true
+  },
+  {
+    "fr": "soeur",
+    "ar": "أخت",
+    "emoji": "👧",
+    "category": "famille",
+    "masked": true
+  },
+  {
+    "fr": "frère",
+    "ar": "أخ",
+    "emoji": "👦",
+    "category": "famille",
+    "masked": true
+  },
+  {
+    "fr": "grand-mère",
+    "ar": "جدّة",
+    "emoji": "👵",
+    "category": "famille",
+    "masked": true
+  },
+  {
+    "fr": "grand-père",
+    "ar": "جدّ",
+    "emoji": "👴",
+    "category": "famille",
+    "masked": true
+  }
+]

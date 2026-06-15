@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArabiKids 🌙</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== VUE ACCUEIL ===== -->
+  <div id="view-home" class="view active">
+    <div class="home-container">
+      <div class="logo">🌙</div>
+      <h1 class="app-title">ArabiKids</h1>
+      <p class="app-subtitle">Apprends l'arabe avec des images !</p>
+
+      <div class="card form-card">
+        <label for="input-name">Quel est ton prénom ?</label>
+        <input
+          type="text"
+          id="input-name"
+          placeholder="Écris ton prénom..."
+          maxlength="20"
+          autocomplete="off"
+        />
+        <button id="btn-start" class="btn btn-primary">C'est parti ! 🚀</button>
+        <p id="home-error" class="error-msg hidden"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== VUE CATÉGORIES ===== -->
+  <div id="view-categories" class="view hidden">
+    <div class="categories-container">
+      <h2 class="categories-title">Que veux-tu apprendre ?</h2>
+      <p id="welcome-name" class="categories-subtitle"></p>
+
+      <!-- Bouton mode aléatoire mis en avant -->
+      <button id="btn-random" class="btn-random" data-category="all">
+        🎲 Mode aléatoire <span class="cat-count" id="count-all"></span>
+      </button>
+
+      <!-- Grille des catégories -->
+      <div id="categories-grid" class="categories-grid"></div>
+    </div>
+  </div>
+
+  <!-- ===== VUE JEU ===== -->
+  <div id="view-game" class="view hidden">
+    <div class="game-header">
+      <button id="btn-quit" class="btn-icon" title="Quitter">✖</button>
+      <div class="progress-bar-wrap">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <div id="score-display" class="score-badge">0 ⭐</div>
+    </div>
+
+    <div class="game-body">
+      <p id="card-counter" class="card-counter">Carte 1 / 10</p>
+      <p id="game-category-label" class="game-category-label"></p>
+
+      <!-- Image / emoji de la flashcard -->
+      <div id="card-emoji" class="card-emoji">🐱</div>
+
+      <!-- Mot français affiché sous l'image -->
+      <p id="card-fr" class="card-fr">chat</p>
+
+      <!-- Bouton pour écouter la prononciation -->
+      <button id="btn-listen" class="btn-listen" title="Écouter">🔊 Écouter</button>
+
+      <!-- Les 4 choix de réponses -->
+      <div id="choices" class="choices-grid"></div>
+
+      <!-- Feedback correct / incorrect -->
+      <div id="feedback" class="feedback hidden"></div>
+    </div>
+  </div>
+
+  <!-- ===== VUE FIN DE PARTIE ===== -->
+  <div id="view-result" class="view hidden">
+    <div class="result-container">
+      <div id="result-emoji" class="result-emoji">🎉</div>
+      <h2 id="result-title" class="result-title">Bravo !</h2>
+      <p id="result-score" class="result-score"></p>
+      <p id="result-best" class="result-best"></p>
+
+      <div class="result-actions">
+        <button id="btn-replay" class="btn btn-primary">Rejouer 🔄</button>
+        <button id="btn-categories" class="btn btn-secondary">Catégories 📚</button>
+        <button id="btn-home" class="btn btn-secondary">Accueil 🏠</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
