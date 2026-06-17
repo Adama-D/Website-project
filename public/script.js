@@ -257,9 +257,12 @@ function handleAnswer(btn, choice, card) {
       if (b.textContent === card.ar) b.classList.add('correct');
     });
 
-    // Message vocal d'encouragement, puis prononce la bonne réponse
+    // Message vocal d'encouragement, puis prononce la bonne réponse dès qu'il est terminé
     speak(randomFrom(TRY_AGAIN_MESSAGES));
-    setTimeout(() => speak(card.ar), 1600);
+    audioPlayer.onended = () => {
+      audioPlayer.onended = null;
+      setTimeout(() => speak(card.ar, 'ar'), 250);
+    };
   }
 
   // Passer à la carte suivante après 2.4 secondes (un peu plus long pour laisser l'audio finir)
@@ -335,6 +338,8 @@ async function endGame() {
 const audioPlayer = new Audio();
 
 function speak(text, lang = 'ar') {
+  // Annule tout enchaînement en attente avant de jouer un nouveau son
+  audioPlayer.onended = null;
   audioPlayer.pause();
   audioPlayer.currentTime = 0;
   audioPlayer.src = `/api/tts?text=${encodeURIComponent(text)}&lang=${lang}`;
@@ -343,10 +348,14 @@ function speak(text, lang = 'ar') {
   });
 }
 
-// Prononce le mot français puis l'arabe avec un enchaînement
+// Prononce le mot français, puis l'arabe dès que le français est terminé
 function speakCard(card) {
   speak(card.fr, 'fr');
-  setTimeout(() => speak(card.ar, 'ar'), 1400);
+  // Déclenche l'arabe à la fin exacte du son français (+ 250ms de pause naturelle)
+  audioPlayer.onended = () => {
+    audioPlayer.onended = null;
+    setTimeout(() => speak(card.ar, 'ar'), 250);
+  };
 }
 
 // Bouton écouter manuel
